@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+        <!--Image Source: https://www.pngall.com/sherlock-holmes-png/download/38139-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a id="logo" class="navbar-brand" href="index.html"><img src="images/navbar.jpg" alt="Website Logo" width="210"></a>
+            <!--Image Source: https://www.pinterest.com/pin/152629874851194953/-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li id="nav-active" class="nav-item active">
+                        <a class="nav-link" href="methods.html">Methods<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="results.html">Results</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="conclusions.html">Conclusions</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main id="content-methods">
+        <h1 class="heading">Methods:</h1>
+        <section>
+            <h2 class="methods-section">Source Materials:</h2>
+            <div id="container1">
+                <p>The primary source for this project was the full collection of Arthur Conan Doyle's <i>Sherlock Holmes</i> stories (fifty-six short stories and four novels) that were published between 1887 and 1927. For this project, every publication was run through textual analysis. These publications were downloaded from <a class="link" href="https://sherlock-holm.es/stories/pdf/a4/1-sided/" target="_blank">sherlock-holm.es</a> and <a class="link" href="https://www.dfw-sherlock.org/" target="_blank">dfw-sherlock.org</a>, and you can view my downloaded collection of publications <a class="link" href="documents/Total Collection of Sherlock Holmes Stories.pdf" target="_blank">here</a>.</p>
+                <img src="images/methods.jpg" alt="Sherlock Holmes Book">
+                <!--Image Source: https://www.esquire.com/entertainment/books/a41613311/adventures-of-sherlock-holmes/-->
+            </div>
+            <p>There were a variety of other secondary sources that were referenced to guide this project including journal articles, book chapters, and websites. You can view a full list of those sources and their roles in my project by viewing my annotated bibliography <a class="link" href="documents/Annotated Bibliography.pdf" target="_blank">here</a>.</p>
+        </section>
+        <section>
+            <h2 id="methods-h2" class="methods-section">Data Analysis Techniques:</h2>
+            <p>I began analyzing the data by downloading every publication, and I sorted them into folders separated into three categories by year: during the social purity movement (1887-1910), after the social purity movement (1911-1927), and every year of publications combined. Then, I uploaded those folders to the textual analysis software, AntConc, to begin my textual analysis.</p>
+            <p>I utilized 2 functions within AntConc for my analysis: KWIC and collocate. I used KWIC to find the overall times that words denoting women (women, female, girl, miss, woman, mrs., her, mistress, she, daughter, madam, wife, wives, lady, ladies, sister, mother) and denoting men (men, male, boy, mister, man, mr., him, his, master, he, son, sir, husband, brother, father) appeared in each publication. I utilized wildcards when appropriate to account for potential use of plurals.</p>
+            <p>I then used the collocate function to view all words within 5 words to the left or right relating to both men and women to find what context both sexes were mentioned in. I specifically looked if they appeared with words indicating irrationality (impulsive, excited, libels, desperate, obsessed) and stereotypical female emotions (meek, cowering, cried, tears, sobbing, love, loved, heart). I also looked to see if women appeared near words regarding their expected marital obligations (children, child, mother, marry, daughter, wife) and words with sexual connotations (harems, polygamy, lover, sex). Lastly, I also used the collocate function to examine how often women appear near words denoting men and men appear near words denoting women.</p>
+            <p>However, because women were represented so many fewer times than men, for the data to be accurate, instead of using the raw count of number times women and men show up within five words of words relating to stereotypical female emotions and words relating to irrationality, I had to utilize what AntConc calls its effect score, which is practically just a T-Score, a score often used in statistics. This score will provide a more accurate measure of the relationship between men and women and words relating to stereotypical female emotions and irrationality because it measures the confidence that there will be an association between the two words in the corpus.</p>
+            <p>Finally, I was particularly interested in how the end of the social purity movement, which scholars Danielle Egan and Louise Hawkes claimed ended in 1910, affected the representation of women in the <i>Sherlock Holmes</i> stories.
+                <span class="d-inline-block" tabindex="0" data-mdb-toggle="tooltip" title="R.   Danielle Egan and Gail   Louise Hawkes, “Sexuality, Youth and the Perils of Endangered Innocence: How History Can Help Us Get Past the Panic,” Gender and Education 24, no. 3 (May 1, 2012): 269–84, https://doi.org/10.1080/09540253.2012.666232, 1.">
+                    <a class="footnote" href="documents/Annotated Bibliography.pdf" target="_blank"><sup style="pointer-events: none;" disabled>1</sup></a>
+                   </span>
+                Thus, I compared the three yearly categories I had originally separated my data into to discern if there was any change. 
+            </p>
+            <p>You can view the full spreadsheet created with the data <a class="link" href="documents/Data.xlsx" target="_blank">here</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <div id="top-button">
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Back<br>to Top</button>
+            <script src="main.js"></script>
+        </div>
+        <div class=" text-center ">
+            <div id="footer-contents" class="text-center p-3" style="background-color: #d93425">
+            © Kaitlyn Chalker 2022
+            </div>
+        </div>
+    </footer> 
+</body>
+</html>
