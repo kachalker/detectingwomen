@@ -314,7 +314,7 @@ span.red {
     color: #735e20;
 }
 
-@media only screen and (max-width: 1140px) {
+@media only screen and (max-width: 1440px) {
     #content-home img {
         margin-bottom: 5em;
     }
