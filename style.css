@@ -92,7 +92,7 @@ p {
     position: fixed;
     bottom: 20px;
     right: 10px;
-    z-index: 99;
+    z-index: 99 !important;
     border: none;
     outline: none;
     background-color: #26261c;
@@ -112,32 +112,24 @@ p {
 /*Home Page*/
 
 #content-home {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    width: 68%;
+    margin: auto;
+    width: 85%;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: -1px;
-}
-
-#content-home {
     font-family: 'Raleway', sans-serif;
     letter-spacing: -1px;
 }
 
 #content-home h1 {
     font-weight: bolder;
-    font-size: 55px;
+    font-size: 50px;
     color: #735e20;
+    margin-top: -.2em;
 }
 
 #content-home h2 {
     font-weight: bold;
     color: #d93425;
-    font-size: 40px;
+    font-size: 35px;
     padding-bottom: .5em;
     margin-top: -.2em;
     text-decoration: underline #d93425;
@@ -145,6 +137,7 @@ p {
 
 #content-home p {
     margin-bottom: 1em;
+    font-size: 18px;
 }
 
 #content-home img {
@@ -222,7 +215,13 @@ p {
 }
 
 #methods-h2 {
-    margin-bottom: 1em;
+    text-decoration: underline;
+    color: #735e20;
+    font-weight: bolder;
+    padding-top: 1.2em;
+    padding-left: .6em;
+    font-size: 31px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .link {
@@ -241,7 +240,6 @@ p {
     font-size: 21px;
     line-height: 1.3em;
     text-indent: 2%;
-    margin-top: -1em;
     padding-bottom: 1em;
 }
 
@@ -263,10 +261,18 @@ p {
     margin-left: 2em;
 }
 
+#methods-heading {
+    font-weight: bolder;
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    margin-top: .1em;
+    color: #d93425;
+}
+
 /*Conclusions*/
 
 hr.dashed {
-    border-top: 3px dashed black;
+    border-top: 3px dashed #d93425;
 }
 
 .conc-sec {
@@ -276,6 +282,7 @@ hr.dashed {
 #content-conclusions h3 {
     font-size: 40px;
     font-weight: bolder;
+    color: #735e20;
 }
 
 #content-conclusions p {
@@ -289,9 +296,20 @@ hr.dashed {
 span.red {
     font-size: 24px;
     font-weight: bold;
-    color: #735e20;
+    color: #d93425;
 }
 
 #last-p {
     padding-bottom: 2em;
+}
+
+.page-heading {
+    padding-top: .2em;
+    font-size: 60px;
+    color: #d93425;
+    font-weight: bolder;
+}
+
+#content-conclusions h2 {
+    color: #735e20;
 }
