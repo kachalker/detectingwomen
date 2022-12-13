@@ -214,7 +214,7 @@ p {
     font-family: 'Raleway', sans-serif;
 }
 
-#methods-h2 {
+#methods-h2, #methods-h2special {
     text-decoration: underline;
     color: #735e20;
     font-weight: bolder;
@@ -313,3 +313,14 @@ span.red {
 #content-conclusions h2 {
     color: #735e20;
 }
+
+@media only screen and (max-width: 1140px) {
+    #content-home img {
+        margin-bottom: 5em;
+    }
+
+    #methods-h2special {
+        margin-bottom: 2em;
+    }
+  }
+  
